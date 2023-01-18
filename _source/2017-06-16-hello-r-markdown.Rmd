@@ -23,6 +23,13 @@ knitr::kable(head(iris))
 ```
 
 To add a new R Markdown posts, simply add a file in the `_source` directory that follows the convention `YYYY-MM-DD-name-of-post.Rmd` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+```{r plot}
+plot(cars$speed, cars$distance,
+     col = as.numeric(iris$Species) + 1,
+     xlab = 'Petal Width', ylab = 'Petal Length',
+     main = "FTN Cars data")
+```
+hist(cars$speed)
 
 Want a local preview? Run
 ```r
