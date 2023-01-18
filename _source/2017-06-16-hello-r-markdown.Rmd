@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello, R Markdown!"
+title:  "Hello, R Markdown! Bonjour a tous!"
 date:   2017-06-16 23:00:40 +0100
 categories: r jekyll
 ---
@@ -15,7 +15,9 @@ plot(iris$Petal.Width, iris$Petal.Length,
      xlab = 'Petal Width', ylab = 'Petal Length',
      main = "Fisher's iris data")
 ```
-
+```{r plot}
+hist(iris$Petal.Width)
+```
 And nicely-formatted tables:
 
 ```{r table, results = 'asis'}
